@@ -82,11 +82,7 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
 
 &lt;ul&gt;
 &lt;li&gt;CouchDB&lt;/li&gt;
-&lt;li&gt;Node.js
-
-&lt;ul&gt;
-&lt;li&gt;ES6&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
 &lt;li&gt;React
 
 &lt;ul&gt;
@@ -94,7 +90,11 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;PouchDB&lt;/li&gt;
 &lt;li&gt;webpack&lt;/li&gt;
-&lt;li&gt;Babel&lt;/li&gt;
+&lt;li&gt;Babel
+
+&lt;ul&gt;
+&lt;li&gt;ES6&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;gulp&lt;/li&gt;
 &lt;li&gt;etc&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
