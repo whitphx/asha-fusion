@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on ASHA fusion</title>
+    <link>http://yuichirotcy.github.io/asha-fusion/services/</link>
+    <description>Recent content in Services on ASHA fusion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <atom:link href="http://yuichirotcy.github.io/asha-fusion/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About Asha Fusion</title>
+      <link>http://yuichirotcy.github.io/asha-fusion/services/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://yuichirotcy.github.io/asha-fusion/services/about/about/</guid>
+      <description>
+
+&lt;p&gt;ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
+電源が無い，インターネット環境が無いなど，インフラが十分でない環境で使用するため，以下の様な特徴があります．&lt;/p&gt;
+
+&lt;h3 id=&#34;高性能なサーバは不要:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;高性能なサーバは不要&lt;/h3&gt;
+
+&lt;p&gt;高性能であっても，消費電力が大きく持ち運びのできない巨大なサーバ機は目的に叶いません．
+現地でも安価に入手可能かつ電源無しで稼働する，ノートPCやスマートフォンなどの携帯デバイスだけで運用が可能です．&lt;/p&gt;
+
+&lt;h3 id=&#34;インターネット接続なしで動作:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;インターネット接続なしで動作&lt;/h3&gt;
+
+&lt;p&gt;サーバ・クライアント型のシステムですが，サーバはインターネット上にある必要はありません．
+Health campを構成する任意のデバイスがサーバとして動作可能です．
+モバイルルータを持ち込んでHealth camp内にLANを構築する運用によって，インターネット無しでHealth camp内に医療システムを構築します．&lt;/p&gt;
+
+&lt;h3 id=&#34;分散型:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;分散型&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;各ローカルシステムで収集したデータは，持ち帰って一つのデータベースにマージできる&lt;/li&gt;
+&lt;li&gt;常時バックアップをとる冗長系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このような要件を満たすため，&lt;a href=&#34;http://couchdb.apache.org/&#34;&gt;CouchDB&lt;/a&gt;をデータベースとして利用しています．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>http://yuichirotcy.github.io/asha-fusion/services/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://yuichirotcy.github.io/asha-fusion/services/components/</guid>
+      <description>&lt;p&gt;参考までに，ASHA fusionで利用している要素技術について列挙します．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CouchDB&lt;/li&gt;
+&lt;li&gt;Node.js
+
+&lt;ul&gt;
+&lt;li&gt;ES6&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;React
+
+&lt;ul&gt;
+&lt;li&gt;Redux&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;PouchDB&lt;/li&gt;
+&lt;li&gt;webpack&lt;/li&gt;
+&lt;li&gt;Babel&lt;/li&gt;
+&lt;li&gt;gulp&lt;/li&gt;
+&lt;li&gt;etc&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このように，クライアント偏重の構成です．
+サーバはWebサーバとCouchDBしか乗っていません．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>http://yuichirotcy.github.io/asha-fusion/services/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://yuichirotcy.github.io/asha-fusion/services/system/</guid>
+      <description>&lt;p&gt;現バージョンのASHA fusionはWebベースのアプリケーションです．
+サーバ機はWebサーバとしてASHA fusionアプリケーションを各クライアントに配信します．&lt;/p&gt;
+
+&lt;p&gt;データベースは&lt;a href=&#34;http://couchdb.apache.org/&#34;&gt;CouchDB&lt;/a&gt;およびCouchDBのJavaScriptクローンである&lt;a href=&#34;https://pouchdb.com/&#34;&gt;PouchDB&lt;/a&gt;を採用しています．
+CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
+また，PouchDBはCouchDBのプロキシとして動作でき，ローカル・リモートを意識せず透過的にデータベースにアクセスできます．&lt;/p&gt;
+
+&lt;p&gt;CouchDBはスキーマレスDBなので，項目の追加・削除やデータ構造の変更が容易です．
+使用シーンによって収集するデータが変わるHealth campでは重要な要素です．&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

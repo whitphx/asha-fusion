@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <base href="http://yuichirotcy.github.io/asha-fusion">
+    <title>ASHA fusion</title>
+
+    
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="/css/landing-page.css" rel="stylesheet">
+
+    
+    <link href="/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    
+    
+    
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="page-scroll navbar-brand" href="#intro">ASHA fusion</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#services">Services</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+    
+</nav>
+
+<section id="intro">
+	
+	<div class="intro-header">
+
+	    <div class="container">
+
+		<div class="row">
+		    <div class="col-lg-12">
+			<div class="intro-message">
+			    <h1>ASHA fusion</h1>
+			    <h3></h3>
+			    <hr class="intro-divider">
+			    <ul class="list-inline intro-social-buttons">
+				        
+
+			    </ul>
+			</div>
+		    </div>
+		</div>
+
+	    </div>
+	    
+
+	</div>
+	
+</section>
+
+
+<section id="about" class="container content-section text-center">
+
+</section>
+
+<section id="services">
+
+
+ 
+    
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">About Asha Fusion</h2>
+                    
+
+<p>ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
+電源が無い，インターネット環境が無いなど，インフラが十分でない環境で使用するため，以下の様な特徴があります．</p>
+
+<h3 id="高性能なサーバは不要:6083a88ee3411b0d17ce02d738f69d47">高性能なサーバは不要</h3>
+
+<p>高性能であっても，消費電力が大きく持ち運びのできない巨大なサーバ機は目的に叶いません．
+現地でも安価に入手可能かつ電源無しで稼働する，ノートPCやスマートフォンなどの携帯デバイスだけで運用が可能です．</p>
+
+<h3 id="インターネット接続なしで動作:6083a88ee3411b0d17ce02d738f69d47">インターネット接続なしで動作</h3>
+
+<p>サーバ・クライアント型のシステムですが，サーバはインターネット上にある必要はありません．
+Health campを構成する任意のデバイスがサーバとして動作可能です．
+モバイルルータを持ち込んでHealth camp内にLANを構築する運用によって，インターネット無しでHealth camp内に医療システムを構築します．</p>
+
+<h3 id="分散型:6083a88ee3411b0d17ce02d738f69d47">分散型</h3>
+
+<ul>
+<li>各ローカルシステムで収集したデータは，持ち帰って一つのデータベースにマージできる</li>
+<li>常時バックアップをとる冗長系</li>
+</ul>
+
+<p>このような要件を満たすため，<a href="http://couchdb.apache.org/">CouchDB</a>をデータベースとして利用しています．</p>
+
+                </div>
+                
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/asha-sc.jpeg" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+    
+    
+    
+
+    
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Components</h2>
+                    <p>参考までに，ASHA fusionで利用している要素技術について列挙します．</p>
+
+<ul>
+<li>CouchDB</li>
+<li>Node.js
+
+<ul>
+<li>ES6</li>
+</ul></li>
+<li>React
+
+<ul>
+<li>Redux</li>
+</ul></li>
+<li>PouchDB</li>
+<li>webpack</li>
+<li>Babel</li>
+<li>gulp</li>
+<li>etc&hellip;</li>
+</ul>
+
+<p>このように，クライアント偏重の構成です．
+サーバはWebサーバとCouchDBしか乗っていません．</p>
+
+                </div>
+                
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/asha-components.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+    
+    
+
+    
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">System</h2>
+                    <p>現バージョンのASHA fusionはWebベースのアプリケーションです．
+サーバ機はWebサーバとしてASHA fusionアプリケーションを各クライアントに配信します．</p>
+
+<p>データベースは<a href="http://couchdb.apache.org/">CouchDB</a>およびCouchDBのJavaScriptクローンである<a href="https://pouchdb.com/">PouchDB</a>を採用しています．
+CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
+また，PouchDBはCouchDBのプロキシとして動作でき，ローカル・リモートを意識せず透過的にデータベースにアクセスできます．</p>
+
+<p>CouchDBはスキーマレスDBなので，項目の追加・削除やデータ構造の変更が容易です．
+使用シーンによって収集するデータが変わるHealth campでは重要な要素です．</p>
+
+                </div>
+                
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/asha-system.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </div>
+    
+    
+    
+    
+
+
+</section>
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline">
+                    <li>
+                        <a class="page-scroll" href="#intro">Home</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a class="page-scroll" href="#services">Services</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <p class="copyright text-muted small">Copyright &copy; ASHA fusion All Rights Reserved</p>
+            </div>
+            <div class="col-md-4">
+		Built with <a href="http://gohugo.io">Hugo</a> and the
+		<a href="https://github.com/crakjie/landing-page-hugo">landing-page-hugo</a> 
+		theme.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/jquery-1.11.0.js"></script>
+
+
+<script src="/js/jquery.easing.min.js"></script>
+
+
+<script src="/js/bootstrap.min.js"></script>
+
+
+<script src="js/landing-page.js"></script>
+
+
+
+</body>
+</html>
+
