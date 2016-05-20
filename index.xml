@@ -61,7 +61,7 @@ Health campを構成する任意のデバイスがサーバとして動作可能
       
       <guid>http://tuttieee.com/asha-fusion/services/system/</guid>
       <description>&lt;p&gt;現バージョンのASHA fusionはWebベースのアプリケーションです．
-サーバ機はWebサーバとしてASHA fusionを各クライアントに配信します．&lt;/p&gt;
+サーバ機ではASHA fusionを各クライアントに配信するWebサーバと，データを保持するデータベースサーバが動作します．&lt;/p&gt;
 
 &lt;p&gt;データベースは&lt;a href=&#34;http://couchdb.apache.org/&#34;&gt;CouchDB&lt;/a&gt;およびCouchDBのJavaScriptクローンである&lt;a href=&#34;https://pouchdb.com/&#34;&gt;PouchDB&lt;/a&gt;を採用しています．
 CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
