@@ -46,12 +46,30 @@
                 <li>
                     <a class="page-scroll" href="#about">About</a>
                 </li>
+                
+                
+                
+                
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#system">System</a>
                 </li>
+                
+                
+                
+                
+                
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#ver2">Version 2</a>
                 </li>
+                
+                
+                
+                <li>
+                    <a class="page-scroll" href="#recruit">Recruit</a>
+                </li>
+                
+                
+                
             </ul>
         </div>
         
@@ -96,7 +114,7 @@
 
  
     
-    <div class="content-section-a">
+    <section class="content-section-a" >
 
         <div class="container">
 
@@ -104,7 +122,7 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">About Asha Fusion</h2>
+                    <h2 class="section-heading">About &#34;ASHA fusion&#34;</h2>
                     
 
 <p>ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
@@ -112,7 +130,7 @@
 
 <h3 id="高性能なサーバは不要:6083a88ee3411b0d17ce02d738f69d47">高性能なサーバは不要</h3>
 
-<p>高性能であっても，消費電力が大きく持ち運びのできない巨大なサーバ機は目的に叶いません．
+<p>高性能であっても，消費電力が大きく持ち運びのできない巨大なサーバ機は目的に適いません．
 現地でも安価に入手可能かつ電源無しで稼働する，ノートPCやスマートフォンなどの携帯デバイスだけで運用が可能です．</p>
 
 <h3 id="インターネット接続なしで動作:6083a88ee3411b0d17ce02d738f69d47">インターネット接続なしで動作</h3>
@@ -130,6 +148,15 @@ Health campを構成する任意のデバイスがサーバとして動作可能
 
 <p>このような要件を満たすため，<a href="http://couchdb.apache.org/">CouchDB</a>をデータベースとして利用しています．</p>
 
+<hr />
+
+<h2 id="demo:6083a88ee3411b0d17ce02d738f69d47">Demo</h2>
+
+<p><a href="http://52.193.7.217:8080/">http://52.193.7.217:8080/</a></p>
+
+<p>Public環境です．
+<strong>個人情報は入力しないでください</strong></p>
+
                 </div>
                 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
@@ -141,7 +168,7 @@ Health campを構成する任意のデバイスがサーバとして動作可能
         </div>
         
 
-    </div>
+    </section>
     
     
     
@@ -149,7 +176,7 @@ Health campを構成する任意のデバイスがサーバとして動作可能
 
     
 
-    <div class="content-section-b">
+    <section class="content-section-b" id="system">
 
         <div class="container">
 
@@ -157,8 +184,44 @@ Health campを構成する任意のデバイスがサーバとして動作可能
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
+                    <h2 class="section-heading">System</h2>
+                    <p>現バージョンのASHA fusionはWebベースのアプリケーションです．
+サーバ機はWebサーバとしてASHA fusionを各クライアントに配信します．</p>
+
+<p>データベースは<a href="http://couchdb.apache.org/">CouchDB</a>およびCouchDBのJavaScriptクローンである<a href="https://pouchdb.com/">PouchDB</a>を採用しています．
+CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
+また，PouchDBはCouchDBのプロキシとして動作でき，ローカル/リモートを意識せず透過的にデータベースにアクセスできます．</p>
+
+<p>CouchDBはスキーマレスDBなので，項目の追加・削除やデータ構造の変更が容易です．
+使用シーンによって収集するデータを柔軟に変えることができます．</p>
+
+                </div>
+                
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/asha-system.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </section>
+    
+    
+    
+
+    
+    <section class="content-section-a" >
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
                     <h2 class="section-heading">Components</h2>
-                    <p>参考までに，ASHA fusionで利用している要素技術について列挙します．</p>
+                    <p>参考までに，ASHA fusionで利用している要素技術を紹介します．</p>
 
 <ul>
 <li>CouchDB</li>
@@ -179,13 +242,13 @@ Health campを構成する任意のデバイスがサーバとして動作可能
 <li>etc&hellip;</li>
 </ul>
 
-<p>このように，クライアント偏重の構成です．
-サーバはWebサーバとCouchDBしか乗っていません．</p>
+<p>クライアント偏重の構成です．
+ほぼ全ての処理をクライアントサイドに置き，サーバはWebサーバとCouchDBしか乗っていません．</p>
 
                 </div>
                 
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                  <img class="img-responsive" src="img/asha-components.png" alt="">
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/asha-components.png" alt="">
                 </div>
                 
             </div>
@@ -193,13 +256,54 @@ Health campを構成する任意のデバイスがサーバとして動作可能
         </div>
         
 
-    </div>
+    </section>
+    
     
     
     
 
     
-    <div class="content-section-a">
+
+    <section class="content-section-b" id="ver2">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Version 2</h2>
+                    
+
+<p>Version1の現地でのテスト運用を終え，ASHA fusion Version2を開発中です．</p>
+
+<p>Version1の現地運用では，現地の医師や医療関係者から数多くのフィードバックを頂きました．
+その結果を踏まえ，より使いやすく高機能なソフトウェアを目指して開発を開始しました．
+コードベースを１から書きなおしていますが，基本的な要素技術はVersion1を継承しています．</p>
+
+<h3 id="クロスデバイス対応:f33bb1c8699d5e6ec99caa376b835e58">クロスデバイス対応</h3>
+
+<p>React Native, Electronを導入し，単一のコードベースを元にWebアプリケーションに加えて
+android, iOS, windows, OS X, Linuxの各OSのネイティブアプリケーションを開発しています．</p>
+
+                </div>
+                
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+                  <img class="img-responsive" src="img/asha-cross.png" alt="">
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </section>
+    
+    
+    
+
+    
+    <section class="content-section-a" id="recruit">
 
         <div class="container">
 
@@ -207,21 +311,28 @@ Health campを構成する任意のデバイスがサーバとして動作可能
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">System</h2>
-                    <p>現バージョンのASHA fusionはWebベースのアプリケーションです．
-サーバ機はWebサーバとしてASHA fusionアプリケーションを各クライアントに配信します．</p>
+                    <h2 class="section-heading">Recruit</h2>
+                    
 
-<p>データベースは<a href="http://couchdb.apache.org/">CouchDB</a>およびCouchDBのJavaScriptクローンである<a href="https://pouchdb.com/">PouchDB</a>を採用しています．
-CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
-また，PouchDBはCouchDBのプロキシとして動作でき，ローカル・リモートを意識せず透過的にデータベースにアクセスできます．</p>
+<p>現在はエンジニア１人で開発をしていて，まだ「開発チーム」ですらありません．
+より多くのメンバーを迎え，開発の仕組みづくりから一緒に作っていけたら嬉しいです．</p>
 
-<p>CouchDBはスキーマレスDBなので，項目の追加・削除やデータ構造の変更が容易です．
-使用シーンによって収集するデータを柔軟に変えることができます．</p>
+<h3 id="コードを書いてネパールに行こう:a747c1bf9e7b4a9168ead6f9523cc51b">コードを書いてネパールに行こう</h3>
+
+<ul>
+<li>プログラミングしてみたい</li>
+<li>研究以外でもコードを書きたい</li>
+<li>ユーザーとの距離が近い開発をしてみたい</li>
+<li>ネパールに行きたい</li>
+<li>こんなクソコード俺が書き直してやる</li>
+</ul>
+
+<p>などなど，パッションのある方，ぜひ！</p>
 
                 </div>
                 
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/asha-system.png" alt="">
+                    <img class="img-responsive" src="img/asha-camp.jpg" alt="">
                 </div>
                 
             </div>
@@ -229,7 +340,7 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
         </div>
         
 
-    </div>
+    </section>
     
     
     
@@ -253,20 +364,39 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
                     <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
+                    
+                    
+                    
+                    
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#system">System</a>
                     </li>
+                    
+                    
+                    
+                    
+                    
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#ver2">Version 2</a>
                     </li>
+                    
+                    
+                    
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
+                        <a class="page-scroll" href="#recruit">Recruit</a>
+                    </li>
+                    
+                    
+                    
                 </ul>
                 <p class="copyright text-muted small">Copyright &copy; ASHA fusion All Rights Reserved</p>
             </div>
             <div class="col-md-4">
 		Built with <a href="http://gohugo.io">Hugo</a> and the
-		<a href="https://github.com/crakjie/landing-page-hugo">landing-page-hugo</a> 
+		<a href="https://github.com/crakjie/landing-page-hugo">landing-page-hugo</a>
 		theme.
             </div>
         </div>

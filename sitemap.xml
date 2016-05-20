@@ -11,11 +11,19 @@
   </url>
   
   <url>
+    <loc>http://tuttieee.com/asha-fusion/services/system/</loc>
+  </url>
+  
+  <url>
     <loc>http://tuttieee.com/asha-fusion/services/components/</loc>
   </url>
   
   <url>
-    <loc>http://tuttieee.com/asha-fusion/services/system/</loc>
+    <loc>http://tuttieee.com/asha-fusion/services/ver2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://tuttieee.com/asha-fusion/services/recruitment/</loc>
   </url>
   
 </urlset>
