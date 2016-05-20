@@ -105,6 +105,21 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
     </item>
     
     <item>
+      <title>Trial</title>
+      <link>http://tuttieee.com/asha-fusion/services/trial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://tuttieee.com/asha-fusion/services/trial/</guid>
+      <description>&lt;p&gt;2016年3月，ASHAチームはネパールに渡航し，
+現地のNGOや医師の協力を得ながら，ASHA fusion version1を用いたHealth campを実施しました．
+実際に現地の医師やナースにASHA fusionを試用していただき，好意的な反応を頂いたとともに，今後の改善に向けた様々な知見を得ることができました．&lt;/p&gt;
+
+&lt;p&gt;また，現地の私立病院の一部のオペレーションにASHA fusionを導入する実験を行い，
+Health campだけでなく病院への導入への可能性を探りました．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Version 2</title>
       <link>http://tuttieee.com/asha-fusion/services/ver2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -114,7 +129,7 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
 
 &lt;p&gt;Version1の現地でのテスト運用を終え，ASHA fusion Version2を開発中です．&lt;/p&gt;
 
-&lt;p&gt;Version1の現地運用では，現地の医師や医療関係者から数多くのフィードバックを頂きました．
+&lt;p&gt;Version1の実地運用では，現地の医師や医療関係者から数多くのフィードバックを頂きました．
 その結果を踏まえ，より使いやすく高機能なソフトウェアを目指して開発を開始しました．
 コードベースを１から書きなおしていますが，基本的な要素技術はVersion1を継承しています．&lt;/p&gt;
 
