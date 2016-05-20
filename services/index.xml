@@ -48,6 +48,9 @@ Health campを構成する任意のデバイスがサーバとして動作可能
 
 &lt;p&gt;Public環境です．
 &lt;strong&gt;個人情報は入力しないでください&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（主なユースケースはClosed環境ですが，
+このDemo版はインターネット上のサーバで動作しています）&lt;/p&gt;
 </description>
     </item>
     
