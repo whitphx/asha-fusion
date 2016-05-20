@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on ASHA fusion</title>
-    <link>http://yuichirotcy.github.io/asha-fusion/services/</link>
+    <link>http://tuttieee.com/asha-fusion/services/</link>
     <description>Recent content in Services on ASHA fusion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <atom:link href="http://yuichirotcy.github.io/asha-fusion/services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://tuttieee.com/asha-fusion/services/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About Asha Fusion</title>
-      <link>http://yuichirotcy.github.io/asha-fusion/services/about/about/</link>
+      <link>http://tuttieee.com/asha-fusion/services/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://yuichirotcy.github.io/asha-fusion/services/about/about/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/about/about/</guid>
       <description>
 
 &lt;p&gt;ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
@@ -43,10 +43,10 @@ Health campを構成する任意のデバイスがサーバとして動作可能
     
     <item>
       <title>Components</title>
-      <link>http://yuichirotcy.github.io/asha-fusion/services/components/</link>
+      <link>http://tuttieee.com/asha-fusion/services/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://yuichirotcy.github.io/asha-fusion/services/components/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/components/</guid>
       <description>&lt;p&gt;参考までに，ASHA fusionで利用している要素技術について列挙します．&lt;/p&gt;
 
 &lt;ul&gt;
@@ -75,10 +75,10 @@ Health campを構成する任意のデバイスがサーバとして動作可能
     
     <item>
       <title>System</title>
-      <link>http://yuichirotcy.github.io/asha-fusion/services/system/</link>
+      <link>http://tuttieee.com/asha-fusion/services/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://yuichirotcy.github.io/asha-fusion/services/system/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/system/</guid>
       <description>&lt;p&gt;現バージョンのASHA fusionはWebベースのアプリケーションです．
 サーバ機はWebサーバとしてASHA fusionアプリケーションを各クライアントに配信します．&lt;/p&gt;
 
