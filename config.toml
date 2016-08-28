@@ -6,8 +6,3 @@ canonifyurls = true
 [Params]
     googleAnalytics = "UA-78099028-1"
     hideServicesLink = true
-
-#[[Params.social]]
-#    title = "facebook"
-#    icon = "facebook"
-#    url = "https://www.facebook.com/ashafusion/"
