@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>ASHA fusion</title>
+    <link>http://tuttieee.com/asha-fusion/</link>
+    <description>Recent content on ASHA fusion</description>
     <generator>Hugo -- gohugo.io</generator>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja-jp</language>
+    <atom:link href="http://tuttieee.com/asha-fusion/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>About &#34;ASHA fusion&#34;</title>
-      <link>/services/about/about/</link>
+      <link>http://tuttieee.com/asha-fusion/services/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/about/about/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/about/about/</guid>
       <description>
 
 &lt;p&gt;ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
@@ -57,10 +58,10 @@ Health campを構成する任意のデバイスがサーバとして動作可能
     
     <item>
       <title>System</title>
-      <link>/services/system/</link>
+      <link>http://tuttieee.com/asha-fusion/services/system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/system/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/system/</guid>
       <description>&lt;p&gt;現バージョンのASHA fusionはWebベースのアプリケーションです．
 サーバ機ではASHA fusionを各クライアントに配信するWebサーバと，データを保持するデータベースサーバが動作します．&lt;/p&gt;
 
@@ -75,10 +76,10 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
     
     <item>
       <title>Components</title>
-      <link>/services/components/</link>
+      <link>http://tuttieee.com/asha-fusion/services/components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/components/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/components/</guid>
       <description>&lt;p&gt;参考までに，ASHA fusionで利用している要素技術を紹介します．&lt;/p&gt;
 
 &lt;ul&gt;
@@ -107,10 +108,10 @@ CouchDBはMaster-Master型のレプリケーションシステムを提供し，
     
     <item>
       <title>Trial</title>
-      <link>/services/trial/</link>
+      <link>http://tuttieee.com/asha-fusion/services/trial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/trial/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/trial/</guid>
       <description>&lt;p&gt;2016年3月，ASHAチームはネパールに渡航し，
 現地のNGOや医師の協力を得ながら，ASHA fusion version1を用いたHealth campを実施しました．
 実際に現地の医師やナースにASHA fusionを試用していただき，好意的な反応を頂いたとともに，今後の改善に向けた様々な知見を得ることができました．&lt;/p&gt;
@@ -122,10 +123,10 @@ Health campだけでなく病院への導入への可能性を探りました．
     
     <item>
       <title>Version 2</title>
-      <link>/services/ver2/</link>
+      <link>http://tuttieee.com/asha-fusion/services/ver2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/ver2/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/ver2/</guid>
       <description>
 
 &lt;p&gt;Version1の現地でのテスト運用を終え，ASHA fusion Version2を開発中です．&lt;/p&gt;
@@ -158,10 +159,10 @@ android, iOS, windows, OS X, Linuxの各OSのネイティブアプリケーシ�
     
     <item>
       <title>Recruit</title>
-      <link>/services/recruitment/</link>
+      <link>http://tuttieee.com/asha-fusion/services/recruitment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/services/recruitment/</guid>
+      <guid>http://tuttieee.com/asha-fusion/services/recruitment/</guid>
       <description>
 
 &lt;p&gt;現在はエンジニア１人で開発をしていて，まだ「開発チーム」ですらありません．
