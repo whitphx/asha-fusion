@@ -26,9 +26,11 @@ Health campを構成する任意のデバイスがサーバとして動作可能
 -----------------
 
 ## Demo
-http://demo.asha-np.org/
+[Ver. 1 (3月時点)](http://demo.asha-np.org:8888/)
 
-Public環境です．
+[Ver. 2 (開発中バージョン)](http://demo.asha-np.org/)
+
+秘匿性の無いデモ用のPublic環境です．
 **個人情報は入力しないでください**
 
 （主なユースケースはClosed環境ですが，

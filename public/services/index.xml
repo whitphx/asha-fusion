@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on </title>
+    <link>/services/</link>
+    <description>Recent content in Services on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <atom:link href="/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About &#34;ASHA fusion&#34;</title>
+      <link>/services/about/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/about/about/</guid>
+      <description>
+
+&lt;p&gt;ASHA fusionは主に発展途上国のHealth campで使用することを目的として開発がスタートした医療情報システムです．
+電源が無い，インターネット環境が無いなど，インフラが十分でない環境で使用するため，以下の様な特徴があります．&lt;/p&gt;
+
+&lt;h3 id=&#34;高性能なサーバは不要:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;高性能なサーバは不要&lt;/h3&gt;
+
+&lt;p&gt;高性能であっても，消費電力が大きく持ち運びのできない巨大なサーバ機は目的に適いません．
+現地でも安価に入手可能かつ電源無しで稼働する，ノートPCやスマートフォンなどの携帯デバイスだけで運用が可能です．&lt;/p&gt;
+
+&lt;h3 id=&#34;インターネット接続なしで動作:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;インターネット接続なしで動作&lt;/h3&gt;
+
+&lt;p&gt;サーバ・クライアント型のシステムですが，サーバはインターネット上にある必要はありません．
+Health campを構成する任意のデバイスがサーバとして動作可能です．
+モバイルルータを持ち込んでHealth camp内にLANを構築する運用によって，インターネット無しでHealth camp内に医療システムを構築します．&lt;/p&gt;
+
+&lt;h3 id=&#34;分散型:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;分散型&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;各ローカルシステムで収集したデータは，持ち帰って一つのデータベースにマージできる&lt;/li&gt;
+&lt;li&gt;デバイス間でデータを即時同期&lt;/li&gt;
+&lt;li&gt;常時バックアップをとる冗長系&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;このような要件を満たすため，&lt;a href=&#34;http://couchdb.apache.org/&#34;&gt;CouchDB&lt;/a&gt;をデータベースとして利用しています．&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;demo:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Demo&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://demo.asha-np.org:8888/&#34;&gt;Ver. 1 (3月時点)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://demo.asha-np.org/&#34;&gt;Ver. 2 (開発中バージョン)&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;秘匿性の無いデモ用のPublic環境です．
+&lt;strong&gt;個人情報は入力しないでください&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;（主なユースケースはClosed環境ですが，
+このDemo版はインターネット上のサーバで動作しています）&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>System</title>
+      <link>/services/system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/system/</guid>
+      <description>&lt;p&gt;現バージョンのASHA fusionはWebベースのアプリケーションです．
+サーバ機ではASHA fusionを各クライアントに配信するWebサーバと，データを保持するデータベースサーバが動作します．&lt;/p&gt;
+
+&lt;p&gt;データベースは&lt;a href=&#34;http://couchdb.apache.org/&#34;&gt;CouchDB&lt;/a&gt;およびCouchDBのJavaScriptクローンである&lt;a href=&#34;https://pouchdb.com/&#34;&gt;PouchDB&lt;/a&gt;を採用しています．
+CouchDBはMaster-Master型のレプリケーションシステムを提供し，各デバイスのCouchDB間でシームレスにデータを同期します．
+また，PouchDBはCouchDBのプロキシとして動作でき，ローカル/リモートを意識せず透過的にデータベースにアクセスできます．&lt;/p&gt;
+
+&lt;p&gt;CouchDBはスキーマレスDBなので，項目の追加・削除やデータ構造の変更が容易です．
+使用シーンによって収集するデータを柔軟に変えることができます．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>/services/components/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/components/</guid>
+      <description>&lt;p&gt;参考までに，ASHA fusionで利用している要素技術を紹介します．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CouchDB&lt;/li&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;React
+
+&lt;ul&gt;
+&lt;li&gt;Redux&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;PouchDB&lt;/li&gt;
+&lt;li&gt;webpack&lt;/li&gt;
+&lt;li&gt;Babel
+
+&lt;ul&gt;
+&lt;li&gt;ES6&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;gulp&lt;/li&gt;
+&lt;li&gt;etc&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;クライアント偏重の構成です．
+ほぼ全ての処理をクライアントサイドに置き，サーバはWebサーバとCouchDBしか乗っていません．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trial</title>
+      <link>/services/trial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/trial/</guid>
+      <description>&lt;p&gt;2016年3月，ASHAチームはネパールに渡航し，
+現地のNGOや医師の協力を得ながら，ASHA fusion version1を用いたHealth campを実施しました．
+実際に現地の医師やナースにASHA fusionを試用していただき，好意的な反応を頂いたとともに，今後の改善に向けた様々な知見を得ることができました．&lt;/p&gt;
+
+&lt;p&gt;また，現地の私立病院の一部のオペレーションにASHA fusionを導入する実験を行い，
+Health campだけでなく病院への導入への可能性を探りました．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Version 2</title>
+      <link>/services/ver2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/ver2/</guid>
+      <description>
+
+&lt;p&gt;Version1の現地でのテスト運用を終え，ASHA fusion Version2を開発中です．&lt;/p&gt;
+
+&lt;p&gt;Version1の実地運用では，現地の医師や医療関係者から数多くのフィードバックを頂きました．
+その結果を踏まえ，より使いやすく高機能なソフトウェアを目指して開発を開始しました．
+コードベースを１から書きなおしていますが，基本的な要素技術はVersion1を継承しています．&lt;/p&gt;
+
+&lt;h3 id=&#34;追加機能:f33bb1c8699d5e6ec99caa376b835e58&#34;&gt;追加機能&lt;/h3&gt;
+
+&lt;p&gt;Ver1は，Health campを実施するために最低限必要な，ごく基本的な機能のみでした．
+Ver2では様々な要望に基づき機能の充実を図ります．&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;統計情報可視化&lt;/li&gt;
+&lt;li&gt;薬局在庫管理&lt;/li&gt;
+&lt;li&gt;オペレーション自動化&lt;/li&gt;
+&lt;li&gt;UI/UX改善&lt;/li&gt;
+&lt;li&gt;etc&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;やることはたくさんあります&lt;/p&gt;
+
+&lt;h3 id=&#34;クロスデバイス対応:f33bb1c8699d5e6ec99caa376b835e58&#34;&gt;クロスデバイス対応&lt;/h3&gt;
+
+&lt;p&gt;React Native, Electronを導入し，単一のコードベースを元にWebアプリケーションに加えて
+android, iOS, windows, OS X, Linuxの各OSのネイティブアプリケーションを開発しています．&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Recruit</title>
+      <link>/services/recruitment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/recruitment/</guid>
+      <description>
+
+&lt;p&gt;現在はエンジニア１人で開発をしていて，まだ「開発チーム」ですらありません．
+より多くのメンバーを迎え，開発の仕組みづくりから一緒に作っていけたら嬉しいです．&lt;/p&gt;
+
+&lt;h3 id=&#34;コードを書いてネパールに行こう:a747c1bf9e7b4a9168ead6f9523cc51b&#34;&gt;コードを書いてネパールに行こう&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プログラミングしてみたい&lt;/li&gt;
+&lt;li&gt;UI/UXをデザインしてみたい&lt;/li&gt;
+&lt;li&gt;研究以外でもコードを書きたい&lt;/li&gt;
+&lt;li&gt;ITを異分野に持ち込みたい&lt;/li&gt;
+&lt;li&gt;ユーザーとの距離が近い開発をしてみたい&lt;/li&gt;
+&lt;li&gt;ネパールに行きたい&lt;/li&gt;
+&lt;li&gt;こんなクソコード俺が書き直してやる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などなど，パッションのある方，ぜひ！&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

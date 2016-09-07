@@ -2,6 +2,7 @@ baseurl = "http://tuttieee.com/asha-fusion/"
 languageCode = "ja-jp"
 title = "ASHA fusion"
 canonifyurls = true
+theme = "landing-page-hugo"
 
 [Params]
     googleAnalytics = "UA-78099028-1"
